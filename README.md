@@ -19,3 +19,5 @@ Open [http://localhost:3000](http://localhost:3000) with your browser to see the
 ## Deployment on Vercel
 
 This site is deployed on Vercel whenever the `main` branch is updated.
+
+The result can be viewed at https://portfolio-fd4zcscft-dana-ciocan.vercel.app/
