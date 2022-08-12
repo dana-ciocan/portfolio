@@ -8,7 +8,7 @@ const Home: NextPage = () => {
     <div className={styles.container}>
       <Layout>
         <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
+          Dana Ciocan 
         </h1>
 
         <p className={styles.description}>
