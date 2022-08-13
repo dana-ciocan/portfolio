@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Container } from '@chakra-ui/react';
+import { Container, Flex } from '@chakra-ui/react';
 import NavMenu from '../NavMenu/NavMenu';
 
 type LayoutProps = {
@@ -16,7 +16,9 @@ const Layout = ({ children }: LayoutProps) => {
       </Head>
       <Container maxW="container.xl">
         <NavMenu />
-        <main>{children}</main>
+        <Flex h="100vh" py={[0, 10, 15, 20]}>
+          <main>{children}</main>
+        </Flex>
       </Container>
     </>
   );
