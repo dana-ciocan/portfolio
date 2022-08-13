@@ -10,16 +10,20 @@ const Home: NextPage = () => {
       <VStack
         w="full"
         h="full"
-        p={[0, 5, 10]}
+        py={[0, 5, 10]}
         spacing={5}
         alignItems="flex-start"
       >
-        <VStack spacing={3} alignItems="flex-start">
+        <VStack spacing={10} alignItems="flex-start">
           <Text>Good {getTimeOfDay()}!</Text>
           <Heading size="xl" className={styles.title}>
             My name is Dana Ciocan
           </Heading>
-          <Text>I write code for websites</Text>
+          <Text>Welcome to my portfolio</Text>
+          <Text>
+            I love coding websites and I&rsquo;m always up for learning new
+            things
+          </Text>
         </VStack>
       </VStack>
     </Layout>
