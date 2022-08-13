@@ -4,14 +4,14 @@ import { Flex } from '@chakra-ui/react';
 
 const SocialIcons = () => {
   return (
-    <Flex flexDirection="column" gap={2}>
+    <>
       <a href="https://twitter.com/danaiciocan">
-        <Icon as={FiTwitter} w={6} h={6} />
+        <Icon as={FiTwitter} w={{ base: 6, md: 8 }} h={{ base: 6, md: 8 }} />
       </a>
       <a href="https://www.linkedin.com/in/danaciocan/">
-        <Icon as={FiLinkedin} w={6} h={6} />
+        <Icon as={FiLinkedin} w={{ base: 6, md: 8 }} h={{ base: 6, md: 8 }} />
       </a>
-    </Flex>
+    </>
   );
 };
 

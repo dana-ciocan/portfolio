@@ -1,5 +1,5 @@
 import Head from 'next/head';
-import { Container, Flex } from '@chakra-ui/react';
+import { Grid, GridItem, Flex, Container } from '@chakra-ui/react';
 import NavMenu from '../NavMenu/NavMenu';
 import SocialIcons from '../SocialIcons/SocialIcons';
 
@@ -15,16 +15,32 @@ const Layout = ({ children }: LayoutProps) => {
         <meta name="description" content="Dana Ciocan's portfolio website" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <Container maxW="container.xl">
-        <NavMenu />
-        <Flex justifyContent="space-between">
-          <Flex h="89vh" py={[0, 10, 15, 20]}>
+      <Container maxWidth="container.xl">
+        <Grid
+          h="100vh"
+          templateRows="5rem auto"
+          templateColumns="repeat(12, 1fr)"
+          gap={4}
+        >
+          <GridItem colSpan={12}>
+            <NavMenu />
+          </GridItem>
+          <GridItem colSpan={11}>
             <main>{children}</main>
-          </Flex>
-          <Flex h="89vh" alignItems="flex-end">
-            <SocialIcons />
-          </Flex>
-        </Flex>
+          </GridItem>
+          <GridItem>
+            <Flex
+              justifyContent="flex-end"
+              alignItems="flex-end"
+              flexDirection="column"
+              minHeight="100%"
+              py={2}
+              rowGap={2}
+            >
+              <SocialIcons />
+            </Flex>
+          </GridItem>
+        </Grid>
       </Container>
     </>
   );
