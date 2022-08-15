@@ -25,17 +25,18 @@ const Layout = ({ children }: LayoutProps) => {
           <GridItem colSpan={12}>
             <NavMenu />
           </GridItem>
-          <GridItem colSpan={11}>
+          <GridItem colSpan={{ base: 12, md: 11 }}>
             <main>{children}</main>
           </GridItem>
-          <GridItem>
+          <GridItem rowSpan={2} colSpan={{ base: 12, md: 1 }}>
             <Flex
-              justifyContent="flex-end"
-              alignItems="flex-end"
-              flexDirection="column"
+              justifyContent={{ base: 'center', md: 'flex-end' }}
+              alignItems={{ base: 'flex-end', md: 'center' }}
+              flexDirection={{ base: 'row', md: 'column' }}
               minHeight="100%"
               py={2}
-              rowGap={2}
+              rowGap={{ base: 0, md: 2 }}
+              gap={{ base: 2, md: 0 }}
             >
               <SocialIcons />
             </Flex>
