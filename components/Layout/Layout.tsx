@@ -18,7 +18,7 @@ const Layout = ({ children }: LayoutProps) => {
       <Container maxWidth="container.xl">
         <Grid
           h="100vh"
-          templateRows="5rem auto"
+          templateRows="5rem auto 2rem"
           templateColumns="repeat(12, 1fr)"
           gap={4}
         >
