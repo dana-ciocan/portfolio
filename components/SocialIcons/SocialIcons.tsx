@@ -5,13 +5,16 @@ import { StyledSocialIcon } from './SocialIcons.styles';
 const SocialIcons = () => {
   return (
     <>
-      <StyledSocialIcon href="https://twitter.com/danaiciocan">
+      <StyledSocialIcon href="https://twitter.com/danaiciocan" target="_blank">
         <Icon as={FiTwitter} w={8} h={8} />
       </StyledSocialIcon>
-      <StyledSocialIcon href="https://www.linkedin.com/in/danaciocan">
+      <StyledSocialIcon
+        href="https://www.linkedin.com/in/danaciocan"
+        target="_blank"
+      >
         <Icon as={FiLinkedin} w={8} h={8} />
       </StyledSocialIcon>
-      <StyledSocialIcon href="https://codepen.io/dana-ciocan">
+      <StyledSocialIcon href="https://codepen.io/dana-ciocan" target="_blank">
         <Icon as={FiCodepen} w={8} h={8} />
       </StyledSocialIcon>
     </>
