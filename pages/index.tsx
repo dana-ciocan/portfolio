@@ -1,6 +1,7 @@
 import type { NextPage } from 'next';
-import { VStack, Heading, Text } from '@chakra-ui/react';
+import { VStack, Text, Heading } from '@chakra-ui/react';
 import Layout from '../components/Layout/Layout';
+import Header from '../components/Header/Header';
 import { getTimeOfDay } from '../utils/get-time-of-day';
 
 const Home: NextPage = () => {
@@ -14,13 +15,13 @@ const Home: NextPage = () => {
         alignItems="flex-start"
       >
         <VStack spacing={10} alignItems="flex-start">
-          <Text>Good {getTimeOfDay()}!</Text>
-          <Heading size="xl">My name is Dana Ciocan</Heading>
-          <Text>Welcome to my portfolio</Text>
-          <Text>
-            I love coding websites and I&rsquo;m always up for learning new
-            things
-          </Text>
+          <Header>
+            <Heading size="2xl" as="h1">
+              Welcome to my portfolio
+            </Heading>
+          </Header>
+          <Text>Good {getTimeOfDay()}, I&rsquo;m Dana!</Text>
+          <Text size="lg">I love coding and learning new things</Text>
         </VStack>
       </VStack>
     </Layout>
